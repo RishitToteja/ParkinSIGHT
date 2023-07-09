@@ -14,7 +14,11 @@ This project is focused on the identification of Parkinson’s Disease (PD) at a
 8. **Hyperparameter tuning:** Fine-tune the model's hyperparameters using techniques like grid search to optimize the model's performance.
 9. **Model interpretation:** Investigate techniques for model interpretation to gain insights into the features that contribute most to Parkinson's disease detection. Techniques like feature importance analysis or saliency maps can provide valuable interpretability.
 10. **Validation on external dataset:** Validate the trained model on an external dataset to evaluate its generalization ability and robustness, ensuring the model's reliability and effectiveness across different data sources.
+
+<div align="center">
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/Flowchart.png)
+</div>
+
 ## Active Contour Segmentation
 
 We used a Gaussian filter to reduce noise and enhance the quality of the data.
@@ -49,8 +53,13 @@ By incorporating techniques such as autoencoders and PCA, the hypothesis assumes
 
 By utilizing these dimensionality reduction techniques, the model is expected to focus on the most informative aspects of the data and enhance its ability to discriminate between healthy and Parkinson's affected brains. As a result, the hypothesis suggests that the model's performance, measured in terms of accuracy, sensitivity, specificity, or other evaluation metrics, will be higher when utilizing techniques such as autoencoders and PCA compared to not applying any dimensionality reduction techniques.
 
+<div align="center">
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/Block%20Diagram%201.png)
+</div>
+
+<div align="center">
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/Block%20Diagram%202.png)
+</div>
 
 ## Machine Learning Algorithms
 
@@ -67,18 +76,29 @@ By utilizing these dimensionality reduction techniques, the model is expected to
 ## Final Results
 ## Original Feature Matrix (no. of features = 24)
 ### Early PD vs Control
+
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/Original%201.png)
+
 ### Early PD vs SWEDD
+
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/Original%202.png)
+
 ### Principal Component Analysis
 ### Early PD vs Control
+
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/PCA%201.png)
+
 ### Early PD vs SWEDD
+
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/PCA%202.png)
+
 ### Autoencoder 
 ### Early PD vs Control
+
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/AE%201.png)
+
 ### Early PD vs SWEDD
+
 ![image](https://github.com/RishitToteja/PDVisionAI/blob/main/images/AE%202.png)
 
 
