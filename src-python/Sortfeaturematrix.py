@@ -131,7 +131,7 @@ import matplotlib.pyplot as plt
 # Choose what points to visualize
 idx = 0
 # The values of the row 'idx' from columns 1 to 12 are extracted
-points = df.iloc[-40].tolist()[1:13]
+points = df.iloc[idx].tolist()[1:13]
 
 # 'left' will store pairs of points
 left = []
