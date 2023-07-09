@@ -37,21 +37,22 @@ Active contour segmentation enables the extraction of relevant biomarkers from m
 
 ## Feature Matrix Formation
 
-We extracted information from the Active Contour Segmentation curve by uniformly sampling six points on each side (left and right) of the curves (as shown in image below). These points are then flattened into separate x and y coordinates, resulting in a 24-dimensional feature representation for each image.
+We extracted information from the Active Contour Segmentation curve by uniformly sampling six points on each side (left and right) of the curves (as shown in the image below). These points are then flattened into separate x and y coordinates, resulting in a 24-dimensional feature representation for each image.
 
 ## Autoencoder Training
 
-Autoencoders consist of an encoder network and a decoder network. The encoder compresses the input data into a lower-dimensional representation, while the decoder aims to reconstruct the original input from this compressed representation. The compressed representation obtained from the bottleneck layer of the autoencoder serves as the reduced-dimensional representation of the input data, which was used for subsequent analysis.
+Autoencoder consisted of an encoder network and a decoder network. The encoder compressed the input data into a lower-dimensional representation, while the decoder reconstructed the original input from the compressed representation. The compact representation obtained from the bottleneck layer of the autoencoder served as the reduced-dimensional representation of the input data, which was used for subsequent analysis.
 
-Through the application of overfitting, we have successfully validated our autoencoder with a dimensionality of eight, thus enabling the reconstruction of our feature matrix from the ensuing input.
+Through the application of overfitting, we successfully validated the autoencoder with a dimensionality of eight, thus enabled the reconstruction of our feature matrix from the ensuing input.
 
-The hypothesis in our project is that without applying dimensionality reduction techniques, the performance of our Parkinson's disease detection model using machine learning will be lower compared to when using techniques such as autoencoders and PCA.
+The hypothesis in our project was that without applying dimensionality reduction techniques, the performance of our Parkinson's disease detection model using machine learning would be lower compared to when using techniques such as autoencoders and PCA.
 
-The rationale behind this hypothesis is that high-dimensional data, like brain MRI images, often contain redundant or irrelevant information. Without dimensionality reduction, the model may struggle to effectively distinguish between relevant and irrelevant features, leading to decreased performance.
+The rationale behind this hypothesis was that high-dimensional data, like brain SPECT images, often contain redundant or irrelevant information. Without dimensionality reduction, the model may struggle to effectively distinguish between relevant and irrelevant features, which leads to decreased performance.
 
-By incorporating techniques such as autoencoders and PCA, the hypothesis assumes that the model can overcome the challenges posed by high-dimensional data. Autoencoders can learn compact representations of the input data through unsupervised learning, capturing the most important features. Additionally, PCA can further reduce the dimensionality by identifying the principal components that explain the majority of the data's variance.
+By incorporating techniques such as autoencoders and PCA, the hypothesis assumed that the model could overcome the challenges posed by high-dimensional data. Autoencoders could learn compact representations of the input data through unsupervised learning, capturing the most essential features. Additionally, PCA could further reduce the dimensionality by identifying the principal components that explain the majority of the data's variance.
 
-By utilizing these dimensionality reduction techniques, the model is expected to focus on the most informative aspects of the data and enhance its ability to discriminate between healthy and Parkinson's affected brains. As a result, the hypothesis suggests that the model's performance, measured in terms of accuracy, sensitivity, specificity, or other evaluation metrics, will be higher when utilizing techniques such as autoencoders and PCA compared to not applying any dimensionality reduction techniques.
+By utilizing these dimensionality reduction techniques, the model was expected to focus on the most informative aspects of the data and enhance its ability to discriminate between healthy and Parkinson's affected brains. As a result, the hypothesis suggested that the model's performance, measured in terms of accuracy, sensitivity, specificity, or other evaluation metrics, was higher when utilizing techniques such as autoencoders and PCA were used as compared to not applying any dimensionality reduction techniques.
+
 
 <div align="center">
 <img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/Block%20Diagram%201.png">
