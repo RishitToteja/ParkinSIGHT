@@ -25,19 +25,19 @@ We used a Gaussian filter to reduce noise and enhance the quality of the data.
 
 Active contour models, commonly referred to as snakes, are energy-based deformable models that iteratively evolve to fit the contours of objects within an image. These models are driven by internal and external energy terms, which can be customized based on the specific segmentation task. By minimizing the overall energy, the snake adapts its shape to closely match the boundaries of the targeted structure, even in the presence of noise or intensity variations.
 
-Active contour segmentation provides a valuable tool for the early identification of Parkinson's Disease and differentiation from healthy controls and SWEDD subjects. By accurately delineating the substantia nigra and extracting relevant biomarkers, this technique enables objective analysis and potentially facilitates the development of predictive models for early PD detection. Leveraging active contour segmentation in combination with machine learning algorithms holds promise for advancing our understanding of PD and improving clinical decision-making in the field of neurodegenerative disorders.
-
 ### Substantia Nigra Segmentation
 
-The substantia nigra is a critical region affected by PD. Active contour segmentation allows precise delineation of the substantia nigra from structural or functional brain images, facilitating quantitative analysis of its morphological changes. This can provide valuable insights into the progression of PD and enable early detection of neurodegenerative processes.
+The substantia nigra is a critical region affected by PD. Active contour segmentation allows precise delineation of the substantia nigra from structural or functional brain images.
 
-### Biomarker Extraction
 
-Active contour segmentation enables the extraction of relevant biomarkers from medical images. These biomarkers can include shape descriptors, intensity statistics, or spatial distribution features of segmented regions. By applying machine learning algorithms to these biomarkers, we can develop predictive models for PD identification and progression monitoring.
+### Feature Extraction from Contours
+
+Active contour segmentation enables the extraction of relevant biomarkers from medical images. These biomarkers can include shape descriptors, intensity statistics, or spatial distribution features of segmented regions. By applying machine learning algorithms to these biomarkers, This can be used to develop predictive models for early PD detection.
+
 
 ## Feature Matrix Formation
 
-We extract information from the Active Contour Segmentation curve. Specifically, we uniformly sample six points on each side (left and right) of the curve. These points are then flattened into separate x and y coordinates, resulting in a 24-dimensional feature representation for each image.
+We extracted information from the Active Contour Segmentation curve by uniformly sampling six points on each side (left and right) of the curves (as shown in image below). These points are then flattened into separate x and y coordinates, resulting in a 24-dimensional feature representation for each image.
 
 ## Autoencoder Training
 
