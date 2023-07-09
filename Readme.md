@@ -4,16 +4,16 @@ This project is focused on the identification of Parkinson’s Disease (PD) at a
 
 ## Flow of Work
 
-1. **Dataset:** Gather a comprehensive dataset of brain MRI images from individuals with and without Parkinson's disease. We used the PPMI dataset for our project.
-2. **Data preprocessing:** Perform necessary preprocessing steps such as image resizing, normalization, and noise reduction to enhance the quality and consistency of the MRI scans.
-3. **Feature extraction:** Extract meaningful features from the MRI images that can help differentiate between healthy and Parkinson's affected brains. Common features include intensity-based statistics, texture descriptors, and shape-based measurements.
-4. **Feature selection:** Employ feature selection techniques to identify the most informative features for the classification task, reducing dimensionality and improving the efficiency of machine learning algorithms.
-5. **Algorithm selection:** Experiment with different machine learning algorithms such as Support Vector Machines (SVM), Random Forests, or XGBoost. Compare their performance in terms of accuracy, precision, recall, and F1-score to determine the most suitable algorithm for Parkinson's detection.
-6. **Training and validation:** Split the dataset into training and validation sets. Utilize a portion (e.g., 80%) of the data for training and the remaining portion for validation and testing. Implement cross-validation techniques like stratified k-fold validation to ensure robustness and minimize overfitting.
-7. **Performance evaluation:** Assess the performance of the machine learning model using appropriate evaluation metrics, including accuracy, sensitivity, specificity, and area under the Receiver Operating Characteristic (ROC) curve. Aim for high F1 score and sensitivity to ensure effective detection of Parkinson's disease.
-8. **Hyperparameter tuning:** Fine-tune the model's hyperparameters using techniques like grid search to optimize the model's performance.
-9. **Model interpretation:** Investigate techniques for model interpretation to gain insights into the features that contribute most to Parkinson's disease detection. Techniques like feature importance analysis or saliency maps can provide valuable interpretability.
-10. **Validation on external dataset:** Validate the trained model on an external dataset to evaluate its generalization ability and robustness, ensuring the model's reliability and effectiveness across different data sources.
+1. **Dataset:** We utilized the PPMI dataset, which comprises SPECT scans from individuals categorized into three classes: PD (Parkinson's disease), Control, and SWEDD (Scans Without Evidence of Dopaminergic Deficit). To construct the image data used in our analysis, we calculated the average of the 42nd, 43rd, and 44th slices extracted from the SPECT scans.
+2. **Data preprocessing:** We performed the necessary preprocessing steps such as image resizing, normalization, and noise reduction to enhance the quality and consistency of the SPECT scans.
+3. **Feature extraction:** We extracted meaningful features from the SPECT scans that helped us differentiate between healthy and Parkinson's affected brains. 
+Common features include the use of X,Y coordinates of the segmented curve, intensity-based statistics, texture descriptors, and shape-based measurements. 
+4. **Feature selection:** We employed feature selection techniques to identify the most informative features for the classification task, reducing dimensionality and improving the efficiency of machine learning algorithms.
+5. **Algorithm selection:** We experimented with different machine learning algorithms such as Support Vector Machines (SVM), Logistic Regression, Random Forests, and XGBoost. 
+We compared their performance in terms of accuracy, precision, recall, and F1-score to determine the most suitable algorithm for Parkinson's detection.
+6. **Training and validation:** We split the dataset into training and validation sets. We utilized a portion (e.g. 80%) of the data for training and the remaining portion for validation and testing and implemented cross-validation techniques like stratified k-fold validation to ensure robustness and minimize overfitting.
+7. **Performance evaluation:** We assessed the performance of the machine learning model using appropriate evaluation metrics, including accuracy, recall, specificity, F1-score, and area under the Receiver Operating Characteristic (ROC) curve to ensure effective detection of Parkinson's disease.
+8. **Hyperparameter tuning:** We fine-tuned the model's hyperparameters using techniques like grid search to optimize the model's performance.
 
 <div align="center">
 <img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/Flowchart.png">
