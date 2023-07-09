@@ -13,7 +13,7 @@ Common features include the use of X,Y coordinates of the segmented curve, inten
 We compared their performance in terms of accuracy, precision, recall, and F1-score to determine the most suitable algorithm for Parkinson's detection.
 6. **Training and validation:** We split the dataset into training and validation sets. We utilized a portion (e.g. 80%) of the data for training and the remaining portion for validation and testing and implemented cross-validation techniques like stratified k-fold validation to ensure robustness and minimize overfitting.
 7. **Performance evaluation:** We assessed the performance of the machine learning model using appropriate evaluation metrics, including accuracy, recall, specificity, F1-score, and area under the Receiver Operating Characteristic (ROC) curve to ensure effective detection of Parkinson's disease.
-8. **Hyperparameter tuning:** We fine-tuned the model's hyperparameters using techniques like grid search to optimize the model's performance.
+8. **Hyperparameter tuning:** We fine-tuned the model's hyperparameters using grid search to optimize the model's performance.
 
 <div align="center">
 <img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/Flowchart.png">
