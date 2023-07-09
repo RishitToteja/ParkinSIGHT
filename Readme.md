@@ -15,8 +15,14 @@ We compared their performance in terms of accuracy, precision, recall, and F1-sc
 7. **Performance evaluation:** We assessed the performance of the machine learning model using appropriate evaluation metrics, including accuracy, recall, specificity, F1-score, and area under the Receiver Operating Characteristic (ROC) curve to ensure effective detection of Parkinson's disease.
 8. **Hyperparameter tuning:** We fine-tuned the model's hyperparameters using grid search to optimize the model's performance.
 
+## ORIGINAL DATASET
 <div align="center">
-<img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/Flowchart.png">
+<img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/original_dataset.png" width="548" height="657">
+</div>
+
+## SEGMENTED DATASET
+<div align="center">
+<img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/segmented_dataset.png" width="548" height="657">
 </div>
 
 ## Active Contour Segmentation
