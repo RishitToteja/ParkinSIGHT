@@ -72,7 +72,7 @@ By utilizing these dimensionality reduction techniques, the model was expected t
 
 - **XGBoost:** XGBoost (Extreme Gradient Boosting) is a boosting algorithm known for its exceptional performance in various machine learning tasks. It sequentially builds an ensemble of weak prediction models, typically decision trees, to minimize a loss function. XGBoost employs gradient boosting, which optimises the model by adding new trees that focus on correcting the mistakes made by previous trees. It handles complex relationships and is highly efficient, often achieving state-of-the-art results.
 
-- **Logistic Regression:** Logistic Regression: Logistic Regression is a popular statistical learning algorithm used for binary classification problems. Despite its name, it is actually a regression model that uses the logistic function (sigmoid) to map predicted values to probabilities. Logistic Regression models the relationship between the input features and the probability of belonging to a specific class. It is interpretable, computationally efficient, and performs well when the decision boundary is linear or can be approximated by a linear function.
+- **Logistic Regression:** Logistic Regression is a popular statistical learning algorithm used for binary classification problems. Despite its name, it is actually a regression model that uses the logistic function (sigmoid) to map predicted values to probabilities. Logistic Regression models the relationship between the input features and the probability of belonging to a specific class. It is interpretable, computationally efficient, and performs well when the decision boundary is linear or can be approximated by a linear function.
 
 ## Final Results
 ## Original Feature Matrix (no. of features = 24)
