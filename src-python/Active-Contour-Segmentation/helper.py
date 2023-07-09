@@ -41,8 +41,7 @@ def kassSnake(image, initialContour, edgeImage=None, alpha=0.01, beta=0.1, wLine
     # Compute edgeImage from Sobel filter if it's not provided but wEdge (attraction to edges) is non-zero
     if edgeImage is None and wEdge != 0:
         result = scipy.ndimage.sobel(image)
-        # plt.imshow(result, cmap='gray')
-        # plt.savefig('sobel.png')
+      
         # Normalizes the edge image using min-max normalization
         edgeImage = np.sqrt(scipy.ndimage.sobel(image, axis=0, mode='reflect') ** 2 + scipy.ndimage.sobel(image, axis=1, mode='reflect') ** 2)
         edgeImage = (edgeImage - edgeImage.min()) / (edgeImage.max() - edgeImage.min())
