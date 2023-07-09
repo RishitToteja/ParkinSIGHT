@@ -56,7 +56,7 @@ By utilizing these dimensionality reduction techniques, the model is expected to
 <div align="center">
 <img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/Block%20Diagram%201.png">
 </div>
-
+</br>
 <div align="center">
 <img src="https://github.com/RishitToteja/PDVisionAI/blob/main/images/Block%20Diagram%202.png">
 </div>
